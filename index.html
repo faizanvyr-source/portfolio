@@ -7,99 +7,116 @@
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
 body{
-background:#0f172a;
-color:white;
+    background:#f4f4f4;
+    color:#333;
 }
 
 header{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(135deg,#2563eb,#7c3aed);
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
 }
 
 header h1{
-font-size:3rem;
+    font-size:3rem;
 }
 
 header p{
-font-size:1.2rem;
-margin:10px;
+    margin-top:10px;
+    font-size:1.2rem;
 }
 
-.btn{
-padding:12px 25px;
-background:white;
-color:#2563eb;
-border:none;
-border-radius:5px;
-text-decoration:none;
-font-weight:bold;
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
 section{
-padding:60px 10%;
+    padding:50px 0;
 }
 
 h2{
-text-align:center;
-margin-bottom:30px;
-color:#60a5fa;
+    text-align:center;
+    margin-bottom:30px;
+    color:#0f172a;
 }
 
 .about{
-text-align:center;
-line-height:1.8;
+    background:white;
+    padding:30px;
+    border-radius:10px;
 }
 
 .skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
 }
 
 .skill{
-background:#1e293b;
-padding:20px;
-text-align:center;
-border-radius:10px;
+    background:#0f172a;
+    color:white;
+    padding:15px;
+    text-align:center;
+    border-radius:8px;
 }
 
 .projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:20px;
 }
 
 .project-card{
-background:#1e293b;
-padding:20px;
-border-radius:10px;
-transition:0.3s;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.project-card:hover{
-transform:translateY(-5px);
+.project-card h3{
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.project-card ul{
+    margin-left:20px;
+}
+
+.certifications{
+    background:white;
+    padding:30px;
+    border-radius:10px;
 }
 
 .contact{
-text-align:center;
+    text-align:center;
+}
+
+.contact a{
+    text-decoration:none;
+    color:white;
+    background:#0f172a;
+    padding:12px 25px;
+    border-radius:6px;
+    display:inline-block;
+    margin-top:15px;
 }
 
 footer{
-background:#020617;
-padding:20px;
-text-align:center;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 </style>
 </head>
@@ -107,68 +124,20 @@ text-align:center;
 <body>
 
 <header>
-<h1>Faizan Ahmad Baig</h1>
-<p>CSE (AI & ML) Student | Web Developer | Java Programmer</p>
-<a href="#projects" class="btn">View My Work</a>
+    <h1>Faizan Ahmad Baig</h1>
+    <p>B.Tech CSE (AI & ML) | Python Developer | AI Enthusiast</p>
 </header>
 
-<section id="about">
+<section>
+<div class="container">
 <h2>About Me</h2>
+
 <div class="about">
 <p>
-I am a passionate Computer Science Engineering student specializing in
-Artificial Intelligence and Machine Learning. I enjoy building websites,
-Java applications, and AI-based projects.
-</p>
-</div>
-</section>
-
-<section id="skills">
-<h2>Skills</h2>
-
-<div class="skills">
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Java</div>
-<div class="skill">Python</div>
-<div class="skill">C Programming</div>
-<div class="skill">SQL</div>
-<div class="skill">Machine Learning</div>
-</div>
-
-</section>
-
-<section id="projects">
-<h2>Projects</h2>
-
-<div class="projects">
-
-<div class="project-card">
-<h3>Personal Portfolio Website</h3>
-<p>
-Responsive portfolio website using HTML, CSS and JavaScript.
-</p>
-</div>
-
-<div class="project-card">
-<h3>Project Shield</h3>
-<p>
-AI-powered industrial safety monitoring system for risk prediction and accident prevention.
-</p>
-</div>
-
-<div class="project-card">
-<h3>Automatic Pet Feeder</h3>
-<p>
-Smart feeding system that dispenses food automatically at scheduled times.
-</p>
-</div>
-
-<div class="project-card">
-<h3>Urban Heat Mitigation AI</h3>
-<p>
-Machine Learning project for predicting urban heat zones and cooling strategies.
+I am a B.Tech Computer Science Engineering (AI & ML) student passionate about
+Artificial Intelligence, Machine Learning, Web Development, Java, Python,
+and IoT-based projects. I enjoy building innovative solutions that solve
+real-world problems and continuously improving my technical skills.
 </p>
 </div>
 
@@ -176,24 +145,121 @@ Machine Learning project for predicting urban heat zones and cooling strategies.
 </section>
 
 <section>
-<h2>Certifications</h2>
+<div class="container">
 
-<ul style="text-align:center;list-style:none;">
-<li>Google AI Certification</li>
-<li>IBM Python Certification</li>
-<li>Java Programming Certification</li>
-<li>Web Development Certification</li>
-</ul>
+<h2>Skills</h2>
 
+<div class="skills">
+<div class="skill">Python</div>
+<div class="skill">Java</div>
+<div class="skill">C Programming</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">Artificial Intelligence</div>
+<div class="skill">Data Structures</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">IoT</div>
+</div>
+
+</div>
 </section>
 
-<section class="contact">
+<section>
+<div class="container">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Project Shield</h3>
+<p>
+AI-powered industrial safety monitoring system designed to detect
+risks, monitor machinery health, track worker safety, and generate
+real-time alerts.
+</p>
+
+<br>
+
+<b>Technologies:</b>
+<ul>
+<li>Python</li>
+<li>Machine Learning</li>
+<li>AI</li>
+<li>IoT</li>
+<li>HTML/CSS/JS</li>
+</ul>
+</div>
+
+<div class="project-card">
+<h3>Smart Automatic Pet Feeder</h3>
+<p>
+IoT-based pet feeding system that automatically dispenses food at
+scheduled times and helps pet owners monitor feeding activities.
+</p>
+
+<br>
+
+<b>Technologies:</b>
+<ul>
+<li>Arduino</li>
+<li>Embedded C</li>
+<li>IoT Sensors</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2>Certifications</h2>
+
+<div class="certifications">
+<ul>
+<li>Google Certifications</li>
+<li>IBM Certifications</li>
+<li>AI & ML Learning Certifications</li>
+<li>Programming and Development Certifications</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2>Education</h2>
+
+<div class="about">
+<p>
+<strong>B.Tech - Computer Science Engineering (AI & ML)</strong><br>
+Kalasalingam Academy of Research and Education<br>
+2024 - 2028
+</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
 <h2>Contact</h2>
 
-<p>Email: faizan@example.com</p>
-<p>LinkedIn: linkedin.com/in/faizan</p>
-<p>GitHub: github.com/faizan</p>
+<div class="contact">
+<p>Email: your-email@example.com</p>
+<p>Phone: +91 XXXXX XXXXX</p>
 
+<a href="#">Download Resume</a>
+</div>
+
+</div>
 </section>
 
 <footer>
